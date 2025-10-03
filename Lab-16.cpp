@@ -48,6 +48,8 @@ int main(){
     Blue.print();
   Color Green(0, 0, 123);
     Green.print();
-
+  //Partial Constructor
+  Color ParCon(111);
+    ParCon.print();
   return 0;
 }
