@@ -1,4 +1,4 @@
-// COMSC-210 | Lab 14 | Kyawt Thinzar Min
+// COMSC-210 | Lab 16 | Kyawt Thinzar Min
 // IDE used: Visual Studio Code
 
 #include <iostream>
@@ -14,7 +14,7 @@ class Color{
   public:
 //public member functions
 //each of these is a pair for each color red, blue, green
-    void setRed (int r) {red = r;}
+    /*void setRed (int r) {red = r;}
     int getRed()       {return red;}
 
     void setBlue (int b) {blue = b;}
@@ -28,7 +28,9 @@ class Color{
         cout << setw(15) << "Blue: " << blue << endl;
         cout << setw(15) << "Green: " << green << endl;
         cout <<endl;
-    }
+    }*/
+    Color()    {red = 0; blue = 0; green = 0;}
+    Color(int red, int blue, int green) {red = r; blue = b; green = g;}
 };
 
 int main(){
