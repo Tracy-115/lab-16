@@ -12,9 +12,15 @@ class Color{
     int green;
     int blue;
   public:
+// default constructor
+    Color()                      {red = 0; blue = 0; green = 0;}
+// partial constructor
+    Color(int r)                 {red = 1; blue = 0; green = 0;}
+// full parameter constructor
+    Color(int r, int b, int g)   {red = r; blue = b; green = g;}
 //public member functions
 //each of these is a pair for each color red, blue, green
-    /*void setRed (int r) {red = r;}
+    void setRed (int r) {red = r;}
     int getRed()       {return red;}
 
     void setBlue (int b) {blue = b;}
@@ -28,9 +34,8 @@ class Color{
         cout << setw(15) << "Blue: " << blue << endl;
         cout << setw(15) << "Green: " << green << endl;
         cout <<endl;
-    }*/
-    Color()    {red = 0; blue = 0; green = 0;}
-    Color(int red, int blue, int green) {red = r; blue = b; green = g;}
+    }
+
 };
 
 int main(){
@@ -38,20 +43,11 @@ int main(){
     // creating objects
     // setting values and printing them for each color
   Color Red;
-  Red.setRed(123);
-  Red.setBlue(0);
-  Red.setGreen(0);
-  Red.print();
-  Color Blue;
-  Blue.setRed(0);
-  Blue.setBlue(123);
-  Blue.setGreen(0);
-  Blue.print();
-  Color Green;
-  Green.setRed(0);
-  Green.setBlue(0);
-  Green.setGreen(123);
-  Green.print();
+    Red.print();
+  Color Blue(0, 123, 0);
+    Blue.print();
+  Color Green(0, 0, 123);
+    Green.print();
 
   return 0;
 }
